@@ -58,7 +58,7 @@ header {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-.navbar{
+.navbar {
     transition: 1.2s;
 }
 
@@ -387,38 +387,37 @@ a.footer-text:focus,
 /*media queries for changing screen sizes*/
 @media only screen and (min-width: 280px) {
     :root {
-        font-size: 70%;
+        font-size: 75%;
     }
 }
 
 @media only screen and (min-width: 576px) {
     :root {
-        font-size: 85%;
+        font-size: 90%;
     }
 }
 
 @media only screen and (min-width: 768px) {
     :root {
-        font-size: 90%;
-    }
-
-}
-
-
-@media only screen and (min-width: 992px) {
-    :root {
         font-size: 95%;
     }
+
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
     :root {
         font-size: 100%;
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 105%;
+    }
+}
+
 @media only screen and (min-width: 1400px) {
     :root {
-        font-size: 110%;
+        font-size: 115%;
     }
 }
