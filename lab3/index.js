@@ -36,15 +36,15 @@ window.onscroll = function () { navChange() };
 function navChange() {
     var rpiLogo = document.getElementById("ITWS-logo");
     if(screen.width < 700){
-        rpiLogo.src = "/lab3/Resources/RPI-logo-black.png";
+        rpiLogo.src = "Resources/RPI-logo-black.png";
         rpiLogo.style.height = "3rem";
         return;
     }
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        rpiLogo.src = "/lab3/Resources/RPI-logo-black.png";
+        rpiLogo.src = "Resources/RPI-logo-black.png";
         rpiLogo.style.height = "2rem";
     } else {
-        rpiLogo.src = "/lab3/Resources/RPI-ITWS-logo-black-howelc.svg";
+        rpiLogo.src = "Resources/RPI-ITWS-logo-black-howelc.svg";
         rpiLogo.style.height = "5rem";
     }
 }
