@@ -1,0 +1,424 @@
+/*Root element with variables to use throughout enter website*/
+:root {
+    /*colors*/
+    --RPI-Red: rgb(226, 35, 27);
+    --RPI-Dark-Red: rgb(153, 0, 0);
+    --RPI-Dark-Gray: rgb(54, 54, 54);
+    --RPI-Gray: rgb(84, 88, 90);
+    --RPI-Light-Gray: rgb(158, 162, 162);
+    --RPI-Black: rgb(0, 0, 0);
+    --RPI-White: rgb(255, 255, 255);
+    /*typography*/
+    --fs-caption: 0.75rem;
+    --fs-body: 1rem;
+    --fs-body-large: 1.25rem;
+    --fs-head: 1.5rem;
+    --fs-head-large: 2rem;
+    --fs-head-xl: 4rem;
+    /*fonts*/
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --title-font: 'Source Sans Pro', sans-serif;
+    --nav-font: 'Inter', sans-serif;
+}
+
+/*basic body styling*/
+html {
+    scroll-padding-top: 12vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip-ink: auto;
+    image-rendering: auto;
+    -webkit-line-break: normal;
+    -moz-line-break: normal;
+    -ms-line-break: normal;
+    line-break: normal;
+    orphans: 3;
+    widows: 3;
+    hanging-punctuation: first allow-end last;
+}
+
+/* ITWS header logo */
+#ITWS-logo {
+    height: 4rem;
+    transition: .5s;
+}
+
+/* Nav bar styling*/
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar{
+    transition: 1.2s;
+}
+
+a.nav-link {
+    font-family: var(--nav-font);
+    font-size: var(--fs-body);
+    color: var(--RPI-Black);
+    text-transform: uppercase;
+}
+
+li.nav-item {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.active-item {
+    border-bottom: 2px rgb(226, 35, 27) solid;
+}
+
+a.dropdown-item {
+    text-transform: uppercase;
+    font-family: var(--nav-font);
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+    color: var(--RPI-Red);
+}
+
+a.dropdown-item:hover,
+a.dropdown-item:focus {
+    background-color: red;
+    color: white;
+
+}
+
+/* Cool thing for under nav-bar */
+.undernav-home {
+    background-color: var(--RPI-Red);
+}
+
+.unh-link,
+.unh-link:hover,
+.unh-link:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.unh-sub-head {
+    font-size: var(--fs-body-large);
+    font-family: var(--title-font);
+    color: var(--RPI-White);
+}
+
+.unh-head {
+    font-size: var(--fs-head-xl);
+    font-family: var(--title-font);
+    color: var(--RPI-White);
+}
+
+.unh-body {
+    color: var(--RPI-White);
+    font-size: var(--fs-body-large);
+    font-family: var(--body-font);
+}
+
+.unh-img-clip {
+    clip-path: polygon(0% 0%, 0% 0%, 200% 0%, 100% 400%);
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Website Styling */
+
+.home-head,
+.home-head2,
+.home-sub-head,
+.home-sub-head2,
+.home-sub-head3,
+.home-sub-head4 {
+    font-family: var(--title-font);
+}
+
+.home-head,
+.home-sub-head3,
+.home-head-link:hover,
+.home-head-link:focus {
+    color: var(--RPI-Dark-Red);
+}
+
+.home-head,
+.home-head2 {
+    font-size: var(--fs-head-large)
+}
+
+.home-head2,
+.home-sub-head,
+.home-sub-head2,
+.home-sub-head4 {
+    color: var(--RPI-Black);
+}
+
+.home-sub-head,
+.home-sub-head3 {
+    font-size: var(--fs-head);
+}
+
+.home-sub-head2 {
+    font-size: var(--fs-body-large);
+}
+
+a.home-sub-head3 {
+    border-bottom: 1px var(--RPI-Light-Gray) solid;
+}
+
+.home-sub-head4 {
+    font-size: var(--fs-head-xl);
+}
+
+.home-body-lg {
+    font-size: var(--fs-body-large);
+    color: var(--RPI-Black);
+    font-family: var(--body-font);
+}
+
+.home-body {
+    font-size: var(--fs-body);
+    font-family: var(--body-font);
+    color: var(--RPI-Black);
+}
+
+.home-head-link {
+    text-decoration: none;
+    border-bottom: 1px solid rgb(153, 0, 0);
+}
+
+
+#discord-logo,
+.news-link {
+    text-decoration: none;
+
+}
+
+div.info-card.card-body,
+.announcements-box,
+#contact-form {
+    background-color: rgba(224, 223, 223);
+}
+
+.info-card {
+    color: var(--RPI-Black);
+    text-decoration: none;
+    font-family: var(--body-font);
+}
+
+h5.info-card {
+    color: var(--RPI-Dark-Red);
+    font-family: var(--title-font);
+}
+
+a.info-card:hover,
+a.info-card:focus {
+    color: var(--RPI-Dark-Red);
+}
+
+textarea {
+    resize: none;
+}
+
+.news-item {
+    width: 100%;
+}
+
+.link-style2 {
+    color: var(--RPI-Dark-Red);
+    font-size: var(--fs-body-large);
+    font-family: var(--body-font);
+}
+
+.link-style {
+    color: var(--RPI-Dark-Red);
+    font-size: var(--fs-body);
+    font-family: var(--body-font);
+}
+
+.link-style:hover,
+.link-style:focus,
+.link-style2:hover,
+.link-style2:focus {
+    color: var(--RPI-Light-Gray);
+}
+
+/* Under Nav Styling for other pages */
+
+.contact-un,
+.news-un,
+.faculty-un,
+.programs-un,
+.programs2-un {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    height: 25rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+}
+
+.contact-un {
+    background-image: url(/lab3/Resources/background-img-2.jpg);
+}
+
+.news-un {
+    background-image: url(/lab3/Resources/background-img-3.JPG);
+}
+
+.faculty-un {
+    background-image: url(/lab3/Resources/background-img-4.JPG);
+}
+
+.programs-un {
+    background-image: url(/lab3/Resources/background-img-5.JPG);
+}
+
+.programs2-un {
+    background-image: url(/lab3/Resources/background-img-6.JPG);
+}
+
+.text-to-bottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Custom styling for boostrap */
+
+.btn.btn-dark {
+    border-color: var(--RPI-Dark-Red);
+    border-radius: 0;
+    color: var(--RPI-White);
+    background-color: var(--RPI-Dark-Red);
+    font-family: var(--body-font);
+}
+
+.btn.btn-dark:hover,
+.btn.btn-dark:focus {
+    background-color: var(--RPI-White);
+    border-color: var(--RPI-Dark-Red);
+    color: var(--RPI-Dark-Red);
+}
+
+.programs-sec {
+    border-top: 1px solid rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+}
+
+.form-control:focus {
+    border-color: var(--RPI-Dark-Red);
+    box-shadow: inset 0 1px 1px rgb(153, 0, 0),
+        0 0 8px rgb(153, 0, 0);
+}
+
+div.accordion {
+    --bs-accordion-active-color: var(--RPI-Dark-Red);
+    --bs-accordion-active-bg: var(--RPI-White);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--RPI-Dark-Red);
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+button.accordion-button {
+    font-family: var(--title-font);
+    font-size: var(--fs-head);
+    text-transform: uppercase;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: var(--RPI-Dark-Gray);
+}
+
+.footer-text {
+    color: white;
+    font-size: var(--fs-body);
+    font-family: var(--title-font);
+    text-decoration: none;
+
+}
+
+.footer-head {
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: var(--fs-head);
+}
+
+.RPI-seal-bottom {
+    height: 5rem;
+}
+
+.policy-link {
+    color: white;
+    text-decoration: none;
+    font-family: var(--nav-font);
+    font-size: var(--fs-caption);
+}
+
+.policy-link:hover,
+a.footer-text:hover,
+a.footer-text:focus,
+.policy-link:focus {
+    color: var(--RPI-Red);
+}
+
+.copyright {
+    color: white;
+    font-family: var(--body-font);
+    font-size: var(--fs-body);
+}
+
+.footer-div-1 {
+    border-bottom: white 1px solid;
+}
+
+/*media queries for changing screen sizes*/
+@media only screen and (min-width: 280px) {
+    :root {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    :root {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 90%;
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 95%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    :root {
+        font-size: 110%;
+    }
+}

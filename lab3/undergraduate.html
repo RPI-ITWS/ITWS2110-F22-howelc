@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="U.S. Constitution Articles I-VII and Amendments 1-10.">
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--Fonts and CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        defer></script>
+    <!-- custom js -->
+    <script src="/lab3/index.js" defer></script>
+    <title>Information Technology and Web Science | Science at Rensselaer</title>
+</head>
+
+<body class="min-vh-100">
+    <!-- Site Header -->
+    <header class="container-fluid sticky-top">
+        <!-- Site Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light container-xxl">
+            <!-- Site Logo -->
+            <a href="index.html" class="navbar-brand"><img id="ITWS-logo"
+                    src="/lab3/Resources/RPI-ITWS-logo-black-howelc.svg"
+                    alt="Rensselaer Information Technology and Web Science"></a>
+            <!-- Mobile Nav Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#ITWS-Navbar"
+                aria-controls="ITWS-Navbar"><span class="navbar-toggler-icon"></span></button>
+            <!-- Start of off canvas nav -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="ITWS-Navbar">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active-item" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" aria-current="page"
+                                        href="/lab3/undergraduate.html">Undergraduate</a></li>
+                                <li><a class="dropdown-item" href="/lab3/graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/faculty.html">Faculty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Photo and Title under nav -->
+    <div class="undernav-home">
+        <div class="container-xxl programs-un">
+            <div class="text-to-bottom">
+                <h2 class="unh-head">Undergraduate Program</h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- first section of Undergraduate with desc of program -->
+    <section class="news-sec container-xxl py-5">
+        <h2 class="home-head text-center">B.S. in Information Technology and Web Science</h2>
+        <h3 class="home-head2 text-center py-3">Interdisciplinary From Day One.</h3>
+        <p class="home-body-lg text-center">In a world in which information technology affects virtually everything we
+            do,
+            there is a demand for an academic program that offers students the deepest understanding of the Web. As an
+            ITWS student, you will investigate issues related to security, trust, privacy, content value, and the
+            development of the Web in the future.</p>
+        <p class="home-body-lg text-center">You will take a core set of courses on Web and IT development and
+            management,
+            along with courses in your concentration, selected from more than 20 options, including arts, engineering,
+            management, communications, artificial intelligence, Web systems, and medicine.</p>
+
+    </section>
+
+    <!-- second section of Undergraduate -->
+    <section class="undergraduate-info container-xxl">
+        <div class="row">
+            <div class="col-md-9 pb-4">
+                <!-- accordions holding the information -->
+                <div class="accordion accordion-flush" id="undergrad-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                Curriculum
+                            </button>
+                        </h2>
+                        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="accordion-head1"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body">Completion of the B.S. in Information Technology and Web Science
+                                    requires a
+                                    total of 128 -
+                                    130 credit hours:</p>
+                                <p class="home-body"><strong>ITWS Core Requirements (24 - 26 credits)</strong><br>The
+                                    ITWS
+                                    core requirements
+                                    establish a solid foundation for applying ITWS to any discipline.</p>
+                                <p class="home-body"><strong>Concentration Requirement (44 credits)</strong><br>The
+                                    required
+                                    concentration
+                                    provides an opportunity for in-depth study of an ITWS application area.
+                                    Concentration
+                                    options include arts, communication and networks, law, management information
+                                    systems,
+                                    medicine, psychology, and numerous others. In consultation with a faculty adviser,
+                                    students
+                                    may also design their own concentration through the selection of courses that match
+                                    their
+                                    individual interests.</p>
+                                <p class="home-body"><strong>Rensselaer Degree Requirements (60
+                                        credits)</strong><br>The
+                                    Rensselaer requirements
+                                    ensure the degree’s breadth and its consistency with long-established Rensselaer
+                                    traditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                Program Outcome
+                            </button>
+                        </h2>
+                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="accordion-head2"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body"><strong>Students who successfully complete this program will be
+                                        able to
+                                        demonstrate:</strong>
+                                </p>
+                                <ul class="home-body">
+                                    <li>Skill in core information technology and web science development methods</li>
+                                    <li>Foundation skill and knowledge in engineering and/or computer science core</li>
+                                    <li>Knowledge of the management concerns for the effective use of (especially web)
+                                        technology</li>
+                                    <li>An ability to be creative and using well-developed problem solving skills</li>
+                                    <li>Communication, leadership skills and ability to work in teams</li>
+                                    <li>Knowledge of the social, legal, and ethical issues in employing technology
+                                        around
+                                        the
+                                        world</li>
+                                    <li>An ability to recognize and respond to human-computer interaction issues to make
+                                        technology more usable</li>
+                                    <li>Broad knowledge of science, humanities, and/or business topical courses</li>
+                                    <li>Application expertise through completion of a chosen concentration</li>
+                                    <li>An ability to complete the culminating experience designed to prepare graduate
+                                        for
+                                        both
+                                        acceptance into graduate study program and/or direct entry into ITWS career</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                ITWS Core Requirements (24 - 26 credits)
+                            </button>
+                        </h2>
+                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="accordion-head3"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <ul class="home-body">
+                                    <li>Introduction to Information Technology and Web Science - 4 credits</li>
+                                    <li>Web Systems Development - 4 credits</li>
+                                    <li>Database Systems or Data Resource Management (choose 1) - 4 credits</li>
+                                    <li>Information Technology and Web Science Capstone or Senior Thesis (choose 1) -
+                                        4-6
+                                        credits</li>
+                                    <li>Web Science Systems Development - 4 credits</li>
+                                    <li>Managing IT Resources - 4 credits</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                Concentration Requirement (44 credits)
+                            </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="accordion-head4"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body"><strong>Along with the 8 required courses (32 credits) for your
+                                        concentration, you must take the corresponding required technical track
+                                        courses:</strong></p>
+                                <table class="home-body">
+                                    <tbody>
+                                        <tr>
+                                            <td>TECHNICAL TRACK</td>
+                                            <td>CONCENTRATIONS</td>
+                                            <td>COURSES</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Computer Engineering</strong></td>
+                                            <td>
+                                                <ul>
+                                                    <li>Civil Engineering</li>
+                                                    <li>Computer Hardware</li>
+                                                    <li>Computer Networking (hardware focused)</li>
+                                                    <li>Mechanical/Aeronautical Engineering</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>ECSE-2610 Computer Components and Operations</li>
+                                                    <li>ENGR-2350 Embedded Control</li>
+                                                    <li>ECSE-2660 Computer Architecture, Networking and Operating
+                                                        Systems
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Computer Science</strong></td>
+                                            <td>
+                                                <ul>
+                                                    <li>Cognitive Science</li>
+                                                    <li>Computer Networking (software focused)</li>
+                                                    <li>Information Security</li>
+                                                    <li>Machine and Computational Learning</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>CSCI-2200 Foundations of Computer Science</li>
+                                                    <li>CSCI-2300 Introduction to Algorithms</li>
+                                                    <li>CSCI-2500 Computer Organization</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Information Systems</strong></td>
+                                            <td>
+                                                <ul>
+                                                    <li>Arts</li>
+                                                    <li>Communication</li>
+                                                    <li>Economics</li>
+                                                    <li>Entrepreneurship</li>
+                                                    <li>Finance</li>
+                                                    <li>Management Information Systems</li>
+                                                    <li>Medicine</li>
+                                                    <li>Pre-Law</li>
+                                                    <li>Psychology</li>
+                                                    <li>STS</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>CSCI-2200 Foundation of Computer Science</li>
+                                                    <li>CSCI-2500 Computer Organization</li>
+                                                    <li>One of the following:
+                                                        <ul>
+                                                            <li>MGMT-2100 Managerial Statistics</li>
+                                                            <li>BIOL-4200 Biostatistics</li>
+                                                            <li>
+                                                                <div>CSCI-2300 Introduction to Algorithms</div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Web Science</strong></td>
+                                            <td>
+                                                <ul>
+                                                    <li>Data Science</li>
+                                                    <li>Science Informatics</li>
+                                                    <li>Web Technologies</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>CSCI-2200 Foundations of Computer Science</li>
+                                                    <li>CSCI-2300 Introduction to Algorithms</li>
+                                                    <li>CSCI-2500 Computer Organization</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                Rensselaer Degree Requirements (60 credits)
+                            </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="accordion-head5"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body"><strong>Math/Science Requirements (24 credits)</strong></p>
+                                <ul class="home-body">
+                                    <li>Calculus 1 - 4 credits</li>
+                                    <li>Math Elective - 4 credits</li>
+                                    <li>Computer Science 1 - 4 credits</li>
+                                    <li>Data Structures - 4 credits</li>
+                                    <li>Physical Science Elective - 4 credits</li>
+                                    <li>Life Science Elective - 4 credits</li>
+                                </ul>
+                                <p class="home-body"><strong>Humanities, Arts and Social Science Requirements (24
+                                        credits)</strong></p>
+                                <ul class="home-body">
+                                    <li>IT and Society - 4 credits</li>
+                                    <li>Intro to Human Computer Interaction - 4 credits</li>
+                                    <li>Humanities Elective - 4 credits</li>
+                                    <li>Social Science Elective - 4 credits</li>
+                                    <li>2 HASS Electives - 8 credits</li>
+                                </ul>
+                                <p class="home-body"><strong>Free Elective Requirement (12 credits)</strong></p>
+                                <ul class="home-body">
+                                    <li>3 Free Electives - 12 credits</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                ITWS Minor
+                            </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="accordion-head6"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body">The ITWS minor requires a minimum of 16 credit hours that must be
+                                    approved
+                                    by the minor
+                                    advisor in ITWS.</p>
+                                <p class="home-body"><strong>Requirements</strong></p>
+                                <ul class="home-body">
+                                    <li>ITWS-1100 Introduction to ITWS</li>
+                                    <li>ITWS/IHSS-1220 IT and Society</li>
+                                    <li>ITWS-2110 Web Systems Development (CSCI 1200 Data Structures is a pre-requisite
+                                        for
+                                        ITWS-2110)</li>
+                                    <li>ITWS-4310 Managing IT Resources<sup>1</sup></li>
+                                </ul>
+                                <div class="home-body"><sup>1</sup> MGMT Majors only – Take ITWS-4100 Information
+                                    Technology
+                                    and
+                                    Web Science
+                                    Capstone or other course as approved by faculty advisor.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordion-head7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                Arch
+                            </button>
+                        </h2>
+                        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="accordion-head7"
+                            data-bs-parent="#undergrad-accordion">
+                            <div class="accordion-body">
+                                <p class="home-body">The Arch is a unique approach to education that provides
+                                    flexibility in
+                                    the semester
+                                    schedule, allowing students to pursue professional and personal development
+                                    opportunities
+                                    that prepare them to meet the multifaceted challenges of the 21st century. The Arch
+                                    is a
+                                    requirement of the Rensselaer curriculum.</p>
+                                <p class="home-body">Summer Here<br>During The Arch, students remain on campus for the
+                                    summer after their
+                                    sophomore year, taking junior-level classes, and receive focused attention from
+                                    professors
+                                    at this pivotal point in their academic progression. </p>
+                                <p class="home-body">The World Away<br>Then, students leave the Troy campus for a
+                                    semester
+                                    during the
+                                    traditional junior year—either fall or spring—to pursue their passions in the form
+                                    of
+                                    co-ops, internships, civic engagement, research, or international experiences.
+                                    Students
+                                    who
+                                    pursue these opportunities during their academic career are better prepared for
+                                    future
+                                    professional careers and graduate school.</p>
+                                <p class="home-body">For more information regarding the Arch, please visit <a
+                                        class="link-style"
+                                        href="https://info.rpi.edu/the-arch">https://info.rpi.edu/the-arch</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+
+                <div class="pb-5">
+                    <h3 class="home-sub-head3 pb-2">Undergraduates</h3>
+
+                    <a class="btn btn-dark mt-2" href="https://admissions.rpi.edu/undergraduate/apply"
+                        role="button">Apply
+                        Now</a>
+                    <a class="btn btn-dark mt-2" href="https://admissions.rpi.edu/undergraduate/apply"
+                        role="button">Request
+                        Information</a>
+
+                </div>
+                <div class="card">
+                    <div class="card-body info-card">
+                        <h5 class="card-title info-card mb-3">Contact Information</h5>
+                        <h6 class="card-subtitle info-card mb-2">Information Technology and Web Science</h6>
+                        <p class="card-text info-card">Rensselaer Polytechnic Institute <br>
+                            Lally 2nd Floor<br>
+                            110 8th Street<br>
+                            Troy, NY 12180</p>
+                        <a href="/lab3/contact.html" class="card-link info-card link-style">Detailed Contact
+                            Information <i class="bi bi-arrow-right-circle"></i> </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Documents and resources for the under graduate program -->
+    <div class="announcements-div container-xxl pt-4 pb-3">
+        <div class="announcements-box">
+            <h2 class="home-sub-head3 px-3 py-2">Documents &amp; Resources</h2>
+        </div>
+        <div class="row p-2">
+            <div class="col-md-4 py-3"><a href="https://science.rpi.edu/sites/default/files/IT_CurriculumlFall2022.doc"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2022 <i class="bi bi-download"></i></a>
+            </div>
+            <div class="col-md-4 py-3"><a
+                    href="https://science.rpi.edu/sites/default/files/IT_CurriculumlFall2021_0.doc"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2021 <i class="bi bi-download"></i></a>
+            </div>
+            <div class="col-md-4 py-3"><a href="https://science.rpi.edu/sites/default/files/IT_CurriculumlFall2020.doc"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2020 <i class="bi bi-download"></i></a>
+            </div>
+            <div class="col-md-4 py-3"> <a href="https://science.rpi.edu/sites/default/files/IT_CurriculumlFall2019.doc"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2019 <i class="bi bi-download"></i></a>
+            </div>
+            <div class="col-md-4 py-3"> <a href="https://science.rpi.edu/sites/default/files/IT_CurriculumlFall2018.doc"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2018 <i class="bi bi-download"></i></a>
+            </div>
+
+            <div class="col-md-4 py-3"> <a href="https://science.rpi.edu/sites/default/files/2017Curriculum.pdf"
+                    class="btn btn-dark p-2">Curriculum and Concentrations - 2017 <i class="bi bi-download"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Site Footer -->
+    <footer class="vert-spacing">
+        <div class="container-xxl py-3">
+            <div class="row py-3 footer-div-1 justify-content-end">
+                <div class="col-md-1 text-center text-md-start pb-1 pr-1">
+                    <img src="/lab3/Resources/RPI-Seal-White.svg" class="RPI-seal-bottom" alt="RPI Seal">
+                </div>
+                <address class="col-md-3">
+                    <div class="footer-text text-center text-md-start">
+                        Rensselaer Polytechnic Institute
+                    </div>
+                    <div class="footer-text text-center text-md-start">
+                        110 Eighth Street | Troy, NY USA 12180
+                    </div>
+                    <div class="text-center text-md-start"><a href="tel:(518)276-6000" class="footer-text ">
+                            (518)276-6000
+                        </a>
+                    </div>
+                    <div class="text-center text-md-start">
+                        <a href="https://info.rpi.edu/" class="footer-text">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="text-center text-md-start">
+                        <a href="https://rpi.edu/" class="footer-text">
+                            RPI.edu
+                        </a>
+                    </div>
+                </address>
+                <div class="col-md-2 offset-md-2 py-3">
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://admissions.rpi.edu/">Apply</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text"
+                            href="https://apply-undergrad.rpi.edu/register/information_request">Request Info</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://info.rpi.edu/visit">Visit</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md offset-md-2 py-1">
+                    <h3 class="footer-head text-center text-md-start">Follow ITWS</h3>
+                    <!--Facebook-->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://www.facebook.com/ITWSRPI"><i class="bi bi-facebook"></i>
+                            Facebook</a>
+                    </div>
+                    <!-- Twitter -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://twitter.com/rpi_itws"><i class="bi bi-twitter"></i>
+                            Twitter</a>
+                    </div>
+                    <!-- Linkedin -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://linkedin.com/groups/137071/"><i class="bi bi-linkedin"></i>
+                            Linkedin</a>
+                    </div>
+                    <!-- Tiktok -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://www.tiktok.com/@itwsatrpi?lang=en"><i
+                                class="bi bi-tiktok"></i> Tiktok</a>
+                    </div>
+                    <!-- Blog -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://itwsatrpi.blogspot.com/"><i
+                                class="bi bi-pencil-square"></i> Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-2">
+                <p class="copyright">Copyright © 2019 Rensselaer Polytechnic Institute (RPI)</p>
+            </div>
+            <div class="text-center">
+                <p class="copyright">
+                    <a class="px-1 policy-link" href="https://scer.rpi.edu/">Media Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/web-privacy-statement">Web Privacy Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/student-consumer-information">Student
+                        Consumer Information</a>
+                    |
+                    <a class="px-1 policy-link" href="https://sexualviolence.rpi.edu/">Title IX Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/statement-of-accessibility">Accessibility</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

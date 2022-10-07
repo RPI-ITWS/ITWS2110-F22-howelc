@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="U.S. Constitution Articles I-VII and Amendments 1-10.">
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--Fonts and CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        defer></script>
+    <!-- custom js -->
+    <script src="/lab3/index.js" defer></script>
+    <title>Information Technology and Web Science | Science at Rensselaer</title>
+</head>
+
+<body class="min-vh-100">
+    <!-- Site Header -->
+    <header class="container-fluid sticky-top">
+        <!-- Site Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light container-xxl">
+            <!-- Site Logo -->
+            <a href="index.html" class="navbar-brand"><img id="ITWS-logo"
+                    src="/lab3/Resources/RPI-ITWS-logo-black-howelc.svg"
+                    alt="Rensselaer Information Technology and Web Science"></a>
+            <!-- Mobile Nav Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#ITWS-Navbar"
+                aria-controls="ITWS-Navbar"><span class="navbar-toggler-icon"></span></button>
+            <!-- Start of off canvas nav -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="ITWS-Navbar">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Programs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/lab3/undergraduate.html">Undergraduate</a></li>
+                                <li><a class="dropdown-item" href="/lab3/graduate.html">Graduate</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/faculty.html">Faculty</a>
+                        </li>
+                        <li class="nav-item active-item">
+                            <a class="nav-link" aria-current="page" href="/lab3/news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lab3/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Photo and hook under nav -->
+    <div class="undernav-home">
+        <div class="container-xxl news-un">
+            <div class="text-to-bottom">
+                <h2 class="unh-head">News</h2>
+            </div>
+        </div>
+
+    </div>
+    <!-- first section of news -->
+    <section class="news-sec container-xxl py-5">
+        <h2 class="home-head">Recent News</h2>
+        <div class="row py-4">
+            <!-- Each col is a link that contains a photo title and short desc -->
+            <div class="col-lg p-4">
+                <a class="news-link"
+                    href="https://science.rpi.edu/itws/news/rensselaer-researcher-follow-trail-misinformation">
+                    <img class="news-item" src="/lab3/Resources/news-item-1.jpg" alt="News Item 1">
+                    <h3 class="home-sub-head3">Rensselaer Researcher To Follow the Trail of Misinformation</h3>
+                    <p class="home-body">On 9/11, lawmakers from both parties unified in their response. Just over 20
+                        years
+                        later, Congress is distinctly partisan, clashing on everything from the January 6 insurrection
+                        to COVID to climate change. Why? Many blame widespread and widely believed misinformation and
+                        disinformation. Click to read more
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg p-4">
+                <a class="news-link"
+                    href="https://science.rpi.edu/itws/news/rensselaer-advance-blockchain-tech-360k-grant">
+                    <img class="news-item" src="/lab3/Resources/news-item-2.jpg" alt="News Item 2">
+                    <h3 class="home-sub-head3">Rensselaer To Advance Blockchain Tech With $360k Grant</h3>
+                    <p class="home-body">Rensselaer Polytechnic Institute’s Oshani Seneviratne, director of health data
+                        research at the Institute for Data Exploration and Applications (IDEA), and Lirong Xia,
+                        associate professor of computer science, have been awarded $363,343 from the Algorand
+                        Foundation. The award is part of an $8 million grant to fund blockchain research through a
+                        project led by Vassilis Zikas, associate professor of computer science and security researcher
+                        at Purdue University. Click to read more
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg p-4">
+                <a class="news-link"
+                    href="https://science.rpi.edu/itws/news/researchers-develop-equations-prevent-collapse-our-globe%E2%80%99s-most-imperiled-ecosystems">
+                    <img class="news-item" src="/lab3/Resources/news-item-3.jpg" alt="News Item 3">
+                    <h3 class="home-sub-head3">Researchers Develop Equations to Prevent the Collapse of Our Globe’s Most
+                        Imperiled Ecosystems</h3>
+                    <p class="home-body">News headlines on extreme weather, melting ice caps, and threatened species are
+                        daily reminders of our changing environment. The profound scale and intensity of these
+                        challenges may leave one to wonder, “What should we do first?” Researchers recently developed
+                        formulas that help answer that question, effectively creating a method to triage declining
+                        ecosystems by measuring and comparing their distance to tipping points. Click to read more
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg p-4">
+                <a class="news-link"
+                    href="https://science.rpi.edu/itws/news/prediction-human-movement-during-disasters-allow-more-effective-emergency-response">
+                    <img class="news-item" src="/lab3/Resources/news-item-4.jpg" alt="News Item 4">
+                    <h3 class="home-sub-head3">Prediction of Human Movement During Disasters To Allow For More
+                        Effective Emergency Response</h3>
+                    <p class="home-body">The COVID-19 pandemic, bigger and more frequent wildfires, devastating
+                        floods, and powerful storms have become unfortunate facts of life. With each disaster,
+                        people depend on the emergency response of governments, nonprofit organizations, and the
+                        private sector for aid when their lives are upended. However, a complicating factor in
+                        delivering that aid is that people tend to disperse with such disasters. Click to read more
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg p-4">
+                <a class="news-link" href="https://science.rpi.edu/itws/news/gauging-resilience-complex-networks">
+                    <img class="news-item" src="/lab3/Resources/news-item-5.jpg" alt="News Item 5">
+                    <h3 class="home-sub-head3">Gauging the Resilience of Complex Networks</h3>
+                    <p class="home-body">Whether a transformer catches fire in a power grid, a species disappears from
+                        an ecosystem, or water floods a city street, many systems can absorb a certain amount of
+                        disruption. But how badly does a single failure weaken the network? Click to read more
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg p-4">
+                <a class="news-link" href="https://science.rpi.edu/itws/news/tipping-point-legislative-polarization">
+                    <img class="news-item" src="/lab3/Resources/news-item-6.jpg" alt="News Item 6">
+                    <h3 class="home-sub-head3">The Tipping Point for Legislative Polarization</h3>
+                    <p class="home-body">A predictive model of a polarized group, similar to the current U.S. Senate,
+                        demonstrates that when an outside threat – like war or a pandemic – fails to unite the group,
+                        the divide may be irreversible through democratic means. Click to read more
+                    </p>
+                </a>
+            </div>
+            <!-- dummy buttons for if there were more articles -->
+            <div class="btn-toolbar center-content justify-content-center" role="toolbar"
+                aria-label="change displayed articles">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-dark">1</button>
+                    <button type="button" class="btn btn-dark">2</button>
+                    <button type="button" class="btn btn-dark">3</button>
+                    <button type="button" class="btn btn-dark">4</button>
+                    <button type="button" class="btn btn-dark">5</button>
+                    <button type="button" class="btn btn-dark">6</button>
+                    <button type="button" class="btn btn-dark">7</button>
+                    <button type="button" class="btn btn-dark">8</button>
+                    <button type="button" class="btn btn-dark">9</button>
+                    <button type="button" class="btn btn-dark">...</button>
+                    <button type="button" class="btn btn-dark">Next ></button>
+                    <button type="button" class="btn btn-dark">Last >></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- announcements for the program -->
+    <div class="announcements-div container-xxl pt-4 pb-3">
+        <div class="announcements-box">
+            <h2 class="home-sub-head3 px-3 py-2">Announcements</h2>
+        </div>
+        <a href="https://science.rpi.edu/itws/news/2020-06-03-1534/interview-teaching-home-scholastic-view-life-during-pandemic-john-stotz"
+            class="home-sub-head info-card">Interview: On teaching at home A scholastic view of life during the pandemic
+            by
+            By John Stotz, Sarah Shiang, and Medhini Mankale</a>
+        <p class="body-text pt-4">In the last few weeks of the Spring Semester, The Polytechnic met with professors
+            across three schools to learn what the transition looked like department to department. What we found,
+            broadly speaking, was that the Computer Science and ITWS departments seemed to have transitioned most
+            easily, while studio and lab-type courses faced the brunt of the switch to online classes.</p>
+
+    </div>
+
+    <!-- What RPI has been in the news for -->
+    <div class="announcements-div container-xxl pt-4 pb-5">
+        <div class="announcements-box">
+            <h2 class="home-sub-head3 px-3 py-2">In The News</h2>
+        </div>
+        <div class="py-2">
+            <a href="https://apnews.com/article/technology-science-new-york-education-troy-dc5ff879ce2eefd86563dca548f1a5fe"
+                class="home-sub-head info-card ">MIT provost returns to alma mater RPI as next president</a>
+        </div>
+        <div class="py-2">
+            <a href="https://wnyt.com/stem/jonah-mudse-rpi-freshman-improving-natural-disaster-response-through-coding/5132070/?cat=12954"
+                class="home-sub-head info-card">RPI freshman improving natural disaster response through coding</a>
+        </div>
+        <div class="py-2">
+            <a href="https://www.chronicle.com/article/How-One-University-Wants-to/243044"
+                class="home-sub-head info-card">How One University Wants to Teach Students to Use Data</a>
+        </div>
+    </div>
+
+
+    <!-- Site Footer -->
+    <footer class="vert-spacing">
+        <div class="container-xxl py-3">
+            <div class="row py-3 footer-div-1 justify-content-end">
+                <div class="col-md-1 text-center text-md-start pb-1 pr-1">
+                    <img src="/lab3/Resources/RPI-Seal-White.svg" class="RPI-seal-bottom" alt="RPI Seal">
+                </div>
+                <address class="col-md-3">
+                    <div class="footer-text text-center text-md-start">
+                        Rensselaer Polytechnic Institute
+                    </div>
+                    <div class="footer-text text-center text-md-start">
+                        110 Eighth Street | Troy, NY USA 12180
+                    </div>
+                    <div class="text-center text-md-start"><a href="tel:(518)276-6000" class="footer-text ">
+                            (518)276-6000
+                        </a>
+                    </div>
+                    <div class="text-center text-md-start">
+                        <a href="https://info.rpi.edu/" class="footer-text">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="text-center text-md-start">
+                        <a href="https://rpi.edu/" class="footer-text">
+                            RPI.edu
+                        </a>
+                    </div>
+                </address>
+                <div class="col-md-2 offset-md-2 py-3">
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://admissions.rpi.edu/">Apply</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text"
+                            href="https://apply-undergrad.rpi.edu/register/information_request">Request Info</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://info.rpi.edu/visit">Visit</a>
+                    </div>
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md offset-md-2 py-1">
+                    <h3 class="footer-head text-center text-md-start">Follow ITWS</h3>
+                    <!--Facebook-->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://www.facebook.com/ITWSRPI"><i class="bi bi-facebook"></i>
+                            Facebook</a>
+                    </div>
+                    <!-- Twitter -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://twitter.com/rpi_itws"><i class="bi bi-twitter"></i>
+                            Twitter</a>
+                    </div>
+                    <!-- Linkedin -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://linkedin.com/groups/137071/"><i class="bi bi-linkedin"></i>
+                            Linkedin</a>
+                    </div>
+                    <!-- Tiktok -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://www.tiktok.com/@itwsatrpi?lang=en"><i
+                                class="bi bi-tiktok"></i> Tiktok</a>
+                    </div>
+                    <!-- Blog -->
+                    <div class="text-center text-md-start py-1">
+                        <a class="footer-text" href="https://itwsatrpi.blogspot.com/"><i
+                                class="bi bi-pencil-square"></i> Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-2">
+                <p class="copyright">Copyright © 2019 Rensselaer Polytechnic Institute (RPI)</p>
+            </div>
+            <div class="text-center">
+                <p class="copyright">
+                    <a class="px-1 policy-link" href="https://scer.rpi.edu/">Media Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/web-privacy-statement">Web Privacy Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/student-consumer-information">Student
+                        Consumer Information</a>
+                    |
+                    <a class="px-1 policy-link" href="https://sexualviolence.rpi.edu/">Title IX Policy</a>
+                    |
+                    <a class="px-1 policy-link" href="https://info.rpi.edu/statement-of-accessibility">Accessibility</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
