@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An app that uses Open Weather API and API">
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--Fonts and CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        defer></script>
+    <!-- jQuery Ajax Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom js -->
+    <script src="index.js"></script>
+    <title>Weather and IT News app</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Super Cool Weather and IT News App</h1>
+    </header>
+    <nav class="container-xxl">
+        <ul class="nav nav-tabs" id="appSwitch" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="weather" data-bs-toggle="tab" data-bs-target="#weather-tab-display"
+                    type="button" aria-controls="weather-tab-display" aria-selected="true" role="tab">Weather</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="other" data-bs-toggle="tab" data-bs-target="#news-tab-display"
+                    type="button" aria-controls="news-tab-display" aria-selected="false" role="tab">IT News</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="tab-content container-xxl border border-top-0 rounded-4 mb-5" id="tab-display">
+        <div class="tab-pane fade show active" id="weather-tab-display" role="tabpanel" aria-labelledby="weather"
+            tabindex="0">
+            <h2 class="text-center pt-2 head-text-1">Weather</h2>
+            <h3 id="city" class="text-center head-text-3"></h3>
+            <h3 id="temp" class="text-center head-text-3"></h3>
+            <h4 id="weather-desc" class="text-center head-text-3"></h4>
+            <div class="row">
+                <div class="col border border-bottom-0 rounded-4">
+                    <div class="row pt-3">
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-thermometer-high"></i>High</h3>
+                            <p class="body-text" id="high-temp"></p>
+
+                        </div>
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-thermometer-low"></i>Low</h3>
+                            <p class="body-text" id="low-temp"></p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <h3 class="head-text-2"><i class="bi bi-thermometer-half"></i>Feels Like</h3>
+                            <p class="body-text" id="real-feel"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md border border-bottom-0 rounded-4">
+                    <div class="row pt-3">
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-moisture"></i> Humidity</h3>
+                            <p class="body-text" id="humidity"></p>
+                        </div>
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-speedometer"></i> Pressure</h3>
+                            <p class="body-text" id="pressure"></p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <h3 class="head-text-2"><i class="bi bi-wind"></i> Wind Speed</h3>
+                            <p class="body-text" id="wind-speed"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md border border-bottom-0 rounded-4">
+                    <div class="row pt-3">
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-sunrise"></i> Sunrise</h3>
+                            <p class="body-text" id="sunrise"></p>
+                        </div>
+                        <div class="col text-center">
+                            <h3 class="head-text-2"><i class="bi bi-sunset"></i> Sunset</h3>
+                            <p class="body-text" id="sunset"></p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <h3 class="head-text-2"><i class="bi bi-eye"></i> Visibility</h3>
+                            <p class="body-text" id="visibility"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="news-tab-display" role="tabpanel" aria-labelledby="other" tabindex="0">
+            <h2 class="text-center pt-2 head-text-1">IT News</h2>
+            <div class="row p-3">
+                <div class="col text-center border rounded m-3" id="story-1">
+                </div>
+                <div class="col text-center border rounded m-3" id="story-2">
+                </div>
+                <div class="col text-center border rounded m-3" id="story-3">
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col text-center border rounded m-3" id="story-4">
+                </div>
+                <div class="col text-center border rounded m-3" id="story-5">
+                </div>
+                <div class="col text-center border rounded m-3" id="story-6">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
