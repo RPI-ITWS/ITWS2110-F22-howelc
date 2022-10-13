@@ -122,7 +122,6 @@ function getNews() {
             dataType: "json",
             totalResults: 10,
             success: function (data) {
-                console.log(data);
                 //get the first story and display it
                 storyOne = data.results[0];
                 displayStory(storyOne, 'story-1');
