@@ -35,8 +35,9 @@ window.onload = function geolocation() {
         //if not alert and use default coords
         alert("Browser does bot support Geolocation");
         getWeatherData();
-        getNews();
     }
+    getWeatherData();
+    getNews();
 };
 //get the users location and set it eqaul to the global variable
 function getLocation(position) {
@@ -44,7 +45,6 @@ function getLocation(position) {
     let longitude = position.coords.longitude;
     openWeatherURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=061d0036468e8987fe096615b3e585cb" + unit;
     getWeatherData();
-    getNews();
 }
 
 //function to get the weather from the api
@@ -164,13 +164,13 @@ function displayStory(aStory, storyID) {
     let pubDate = aStory.pubDate;
     let title = aStory.title;
     let description = aStory.description;
-    if(img == null){
+    if (img == null) {
         document.getElementById(storyID).innerHTML =
-        '<a class="news-link" href="' + link + '"><p class="date-text">' + pubDate + '</p><h3 class="head-text-2">' + title + '</h3><p class="body-text">' + description + '</p></a>';
+            '<a class="news-link" href="' + link + '"><p class="date-text">' + pubDate + '</p><h3 class="head-text-2">' + title + '</h3><p class="body-text">' + description + '</p></a>';
 
-    }else{
+    } else {
         document.getElementById(storyID).innerHTML =
-        '<a class="news-link" href="' + link + '"><img src="' + img + '" class="img-custom"><p class="date-text">' + pubDate + '</p><h3 class="head-text-2">' + title + '</h3><p class="body-text">' + description + '</p></a>';
+            '<a class="news-link" href="' + link + '"><img src="' + img + '" class="img-custom"><p class="date-text">' + pubDate + '</p><h3 class="head-text-2">' + title + '</h3><p class="body-text">' + description + '</p></a>';
     }
-    
+
 }
