@@ -1,3 +1,35 @@
+The first optimization I implemented is seperating and minifying the CSS. 
+The second optimization I made is separting, minifying, and defering JS.
+The third optimization I implemented was turning all the images into a sprite sheet.
+I then change the JS to reflect this and animated the combs with CSS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Works Cited:
+
 Free Bee web client
 ===================
 This is the JavaScript-based web client for Free Bee.
