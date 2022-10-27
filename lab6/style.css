@@ -11,7 +11,7 @@ h1 {
     margin-bottom: 0;
 }
 
-h1>a {
+.top {
     text-decoration: none;
     font-family: "Noto Sans", sans-serif;
 }
@@ -20,6 +20,7 @@ h1>a {
     text-align: right;
     margin: 0;
     font-style: italic;
+    padding-bottom: 1vh;
 }
 
 h2,
@@ -31,36 +32,37 @@ a,
 
 hr {
     border-color: #805e73;
-}
-
-pre {
-    padding: .5em;
-    overflow: auto;
+    margin: 0;
 }
 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10%;
     text-align: center;
 }
 
 a.nav-link {
     text-decoration: none;
-    border: 1px solid black;
+    border-right: 1px #805e73 solid;
+    border-left: 1px #805e73 solid;
+    padding: 0.5vh;
+}
+
+button {
     border-radius: 5px;
-    padding: 4%;
+    font-size: 1.1rem;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-#footer {
-    display: block;
-    text-align: right;
-    margin: 0;
-    font-style: italic;
+footer {
+    display: grid;
+}
+
+#footer{
+    text-align: end;
 }
 
 #game {
@@ -160,6 +162,7 @@ div.bg {
 .access {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 1vh;
 }
 
 .dictionary {
@@ -171,18 +174,32 @@ div.bg {
 }
 
 /* Added CSS */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     :root {
         margin-top: clamp(0.25rem, 2vh, 1rem);
         margin-bottom: clamp(0.25rem, 2vh, 1rem);
         margin-left: clamp(0.25rem, 15vw, 100rem);
         margin-right: clamp(0.25rem, 15vw, 100rem);
+        transition: 1s ease-in-out;
     }
 
 }
 
 .text-center {
     text-align: center;
+}
+
+#guess, #guess:active, #guess:active{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#submit-btn{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
 }
 
 /* sprite sheet css */

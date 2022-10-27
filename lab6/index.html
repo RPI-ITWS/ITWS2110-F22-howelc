@@ -21,28 +21,29 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="../favicon.png" />
-	<link rel="stylesheet" href="style.css">
-	<script src="index.js" defer></script>
+	<link rel="shortcut icon" type="image/png" href="../favicon.png">
+	<link rel="stylesheet" href="style.min.css">
+	<script src="index.min.js" defer></script>
 	<meta name="description" content="Enhanced Free Software clone of The New York Times game Spelling Bee">
 	<title>Free Bee</title>
 </head>
 
 <body>
-	<a name="top"></a>
-	<div id="main">
-		<h1><a href="." title="Top">Free Bee</a></h1>
-		<p class="subtitle">Enhanced Free Software clone of The New York Times game Spelling Bee</p>
-		<hr />
-		<div class="navbar">
-			<a class="nav-link" href="../index.html">Home</a>
-			<a class="nav-link" href="#top">Play</a>
-			<a class="nav-link" href="../download.html">Download</a>
-			<a class="nav-link" href="../api.html">API</a>
+	<header>
+		<div id="main">
+			<h1><a href="#" class="top">Free Bee</a></h1>
+			<p class="subtitle">Enhanced Free Software clone of The New York Times game Spelling Bee</p>
+			<hr>
+			<nav class="navbar">
+				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="#">Play</a>
+				<a class="nav-link" href="#">Download</a>
+				<a class="nav-link" href="#">API</a>
+			</nav>
+			<hr>
 		</div>
-	</div>
-	<h2 id="play" class="text-center">Play Free Bee on the Web</h2>
-
+		<h2 id="play" class="text-center">Play Free Bee on the Web</h2>
+	</header>
 	<div id="game">
 		<div id="playfield">
 			<div id="playfield-bg">
@@ -71,19 +72,19 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 		</div>
 	</div>
 
-	<br />
+	<br>
 
 	<div class="game-buttons text-center">
-		<button onclick="shuffle()">Shuffle letters</button>
+		<button onclick="shuffle()">Shuffle Letters</button>
 		<button onclick="delete_letter()">Delete</button>
 	</div>
 
-	<br />
+	<br>
 
 	<div class="game-forms text-center">
 		<form id="player-guess" onsubmit="check(); return false">
-			<input type="text" id="guess" placeholder="Enter word">
-			<input type="submit" value="Submit">
+			<input type="text" id="guess" placeholder="Type or Click">
+			<input id="submit-btn" type="submit" value="Submit">
 		</form>
 	</div>
 
@@ -107,7 +108,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 		</div>
 	</div>
 
-	<br />
+	<br>
 
 	<div class="wordlists">
 		<div class="today-answers">
@@ -122,8 +123,8 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 		</div>
 	</div>
 
-	<br />
-	<br />
+	<br>
+	<br>
 
 	<div class="restart">
 		<div id="restart-daily-button" class="restart-daily">
@@ -137,9 +138,9 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 		</div>
 	</div>
 
-	<br />
-	<br />
-	<br />
+	<br>
+	<br>
+	<br>
 	<div class="access">
 		<div class="dmb">
 			<button class="dmb" onclick="darkmode()">Switch Dark/Light mode</button>
@@ -148,11 +149,10 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 			<a href="https://github.com/freebee-game/enable/issues">Request dictionary changes</a>
 		</div>
 	</div>
-	<hr />
+	<hr>
 	<footer>
 		<p id="footer">Free Bee is brought to you by Studio Urban Homestead | OpenBSD httpd</p>
 	</footer>
-
 
 
 </body>

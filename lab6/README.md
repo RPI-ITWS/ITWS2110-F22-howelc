@@ -1,28 +1,13 @@
-The first optimization I implemented is seperating and minifying the CSS. 
-The second optimization I made is separting, minifying, and defering JS.
-The third optimization I implemented was turning all the images into a sprite sheet.
-I then change the JS to reflect this and animated the combs with CSS.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The first two optimizations I implemented are seperating and minifying the CSS.
+The second two optimizations I made are separting, minifying, and defering JS.
+The fifth optimization I implemented are turning all the images into a sprite sheet.
+The sixth optimization I made is animating the combs with CSS instead of JS.
+The final optimization I made is combining indentical similar CSS rules.
+As for what I did beyond this I spent quite a bit of time on the getting everything
+that utlized the images to work with the sprite sheet. I made changes to many of the
+UI elements and incresed sizes for better readability. I got rid of deprecated html and css.
+I added grid, flexbox, changed units, and added a media query to help with cross screen
+compatibility. Overall, this lab was very fun.
 
 
 
