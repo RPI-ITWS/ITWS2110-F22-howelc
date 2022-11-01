@@ -1,8 +1,15 @@
-The first two optimizations I implemented are seperating and minifying the CSS.
-The second two optimizations I made are separting, minifying, and defering JS.
-The fifth optimization I implemented are turning all the images into a sprite sheet.
-The sixth optimization I made is animating the combs with CSS instead of JS.
-The final optimization I made is combining indentical similar CSS rules.
+Optimizations:
+
+- The first two optimizations I implemented are seperating and minifying the CSS and JS.
+- The third optimization I implemented is turning all the images into a sprite sheet.
+- The fourth optimization I made is animating the combs with CSS instead of JS.
+- The fifth optimization I made is combining indentical similar CSS rules.
+- The sixth optimization I made is making changes to the JS such as using textContent since innerHTML parses HTML.
+- The seventh optimization I made is enabling gzip compression. (Note: I do not know if this was active before but I added
+it to the root directory)
+- The eight optimization I made is adding expire headers
+
+
 As for what I did beyond this I spent quite a bit of time on the getting everything
 that utlized the images to work with the sprite sheet. I made changes to many of the
 UI elements and incresed sizes for better readability. I got rid of deprecated html and css.
@@ -10,10 +17,13 @@ I added grid, flexbox, changed units, and added a media query to help with cross
 compatibility. Overall, this lab was very fun.
 
 
-
-
-
 Works Cited:
+
+Sprite Sheet - https://www.codeandweb.com/free-sprite-sheet-packer
+
+For GZip Compression - https://ubiq.co/tech-blog/enable-gzip-compression-apache/
+
+Expire Headers - https://kinsta.com/knowledgebase/add-expires-headers-wordpress/
 
 Free Bee web client
 ===================
@@ -44,3 +54,7 @@ Find us on the web at https://freebee.fun/
 License
 -------
 ISC License. See LICENSE for details.
+
+
+
+

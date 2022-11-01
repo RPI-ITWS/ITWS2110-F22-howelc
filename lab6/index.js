@@ -1,23 +1,23 @@
 
-var all;
-var daily_play;
-var found;
-var foundlist = [];
-var guess;
-var letters = [], todayletters = [];
-var points;
-var rank1, rank2, rank3, rank4, rank5, rank6, rank7, rank8, rank9;
-var replaying;
-var total, todaytotal, yesterdaytotal;
-var win;
-var wordlist = [], todaywordlist = [], yesterdaywordlist = [];
-var words, todaywords, yesterdaywords;
-var dark;
+let all;
+let daily_play;
+let found;
+let foundlist = [];
+let guess;
+let letters = [], todayletters = [];
+let points;
+let rank1, rank2, rank3, rank4, rank5, rank6, rank7, rank8, rank9;
+let replaying;
+let total, todaytotal, yesterdaytotal;
+let win;
+let wordlist = [], todaywordlist = [], yesterdaywordlist = [];
+let words, todaywords, yesterdaywords;
+let dark;
 
 function darkmode() {
     if (dark == 1) {
-        var x = document.querySelectorAll('*');
-        for (var i = 0; i < x.length; i++) {
+        let x = document.querySelectorAll('*');
+        for (let i = 0; i < x.length; i++) {
             if (x[i].classList[0] != "fg" && x[i].classList[0] != "bg") {
                 x[i].style.background = "#fbfcff";
                 x[i].style.color = "#243b4a";
@@ -26,8 +26,8 @@ function darkmode() {
         dark = 0;
         localStorage.setItem("useDarkMode", 1);
     } else {
-        var x = document.querySelectorAll('*');
-        for (var i = 0; i < x.length; i++) {
+        let x = document.querySelectorAll('*');
+        for (let i = 0; i < x.length; i++) {
             if (x[i].classList[0] != "fg" && x[i].classList[0] != "bg") {
                 x[i].style.background = "#111111";
                 x[i].style.color = "#9e9e9e";
@@ -80,7 +80,7 @@ function untype() {
 }
 
 function display() {
-    var didtouch = 0;
+    let didtouch = 0;
 
     // remove excess classes
     let lst1 = document.getElementById("play1").classList;
@@ -183,7 +183,7 @@ function display() {
 }
 
 function update_rank() {
-    var rank;
+    let rank;
 
     if (points >= rank9) {
         if (win == 0) {
@@ -209,7 +209,7 @@ function update_rank() {
         rank = "Newbie";
     }
 
-    document.getElementById("rank-update").innerHTML = rank;
+    document.getElementById("rank-update").textContent = rank;
 }
 
 function set_rank() {
@@ -229,8 +229,8 @@ function save_word() {
 }
 
 function add_points() {
-    var one = 0, two = 0, three = 0, four = 0, five = 0, six = 0;
-    var i = 0, j = 0;
+    let one = 0, two = 0, three = 0, four = 0, five = 0, six = 0;
+    let i = 0, j = 0;
 
     if (daily_play === 1) {
         save_word();
@@ -285,7 +285,7 @@ function add_points() {
 }
 
 function found_word() {
-    var i;
+    let i;
 
     for (i = 0; i < found; i++) {
         if (guess == foundlist[i]) {
@@ -301,7 +301,7 @@ function found_word() {
 
     add_points();
 
-    document.getElementById("points-update").innerHTML = points;
+    document.getElementById("points-update").textContent = points;
     document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
 
     update_rank();
@@ -315,7 +315,7 @@ function found_word() {
 }
 
 function check() {
-    var center = 0, i;
+    let center = 0, i;
 
     document.getElementById("no-message").style.display = "inline";
     document.getElementById("pangram").style.display = "none";
@@ -362,7 +362,7 @@ function check() {
 }
 
 function replay_words() {
-    var i, replay;
+    let i, replay;
 
     replaying = 1;
 
@@ -410,7 +410,7 @@ function replay_words() {
 }
 
 function daily() {
-    var i;
+    let i;
 
     daily_play = 1;
 
@@ -425,13 +425,13 @@ function daily() {
     replaying = 0;
     win = 0;
 
-    document.getElementById("points-update").innerHTML = points;
+    document.getElementById("points-update").textContent = points;
     document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
-    document.getElementById("rank-update").innerHTML = rank;
-    document.getElementById("yesterday-or-random").innerHTML = "Yesterday's answers";
+    document.getElementById("rank-update").textContent = rank;
+    document.getElementById("yesterday-or-random").textContent = "Yesterday's answers";
     document.getElementById("random-answers").style.display = "none";
     document.getElementById("restart-daily-button").style.visibility = "hidden";
-    document.getElementById("update-random").innerHTML = "";
+    document.getElementById("update-random").textContent = "";
     document.getElementById("no-message").style.display = "inline";
     document.getElementById("pangram").style.display = "none";
     document.getElementById("already-found").style.display = "none";
@@ -459,10 +459,10 @@ function daily() {
 }
 
 function get_yesterday() {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var gameObj = JSON.parse(this.responseText);
+            let gameObj = JSON.parse(this.responseText);
             yesterdaywords = gameObj.words;
             yesterdaytotal = gameObj.total;
             yesterdaywordlist = gameObj.wordlist;
@@ -474,10 +474,10 @@ function get_yesterday() {
 }
 
 function get_today() {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var gameObj = JSON.parse(this.responseText);
+            let gameObj = JSON.parse(this.responseText);
             todayletters[0] = gameObj.letters[0];
             todayletters[1] = gameObj.letters[1];
             todayletters[2] = gameObj.letters[2];
@@ -537,7 +537,7 @@ window.onload = function () {
 
 function shuffle() {
 
-    var i, j, t;
+    let i, j, t;
 
     for (i = 5; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
@@ -550,8 +550,8 @@ function shuffle() {
 }
 
 function random() {
-    var xhttp = new XMLHttpRequest();
-    var i;
+    let xhttp = new XMLHttpRequest();
+    let i;
 
     daily_play = 0;
 
@@ -565,11 +565,11 @@ function random() {
     rank = "Newbie";
     win = 0;
 
-    document.getElementById("points-update").innerHTML = points;
+    document.getElementById("points-update").textContent = points;
     document.getElementById("answers-update").innerHTML = foundlist.join("<br />");
-    document.getElementById("rank-update").innerHTML = rank;
-    document.getElementById("yesterday-or-random").innerHTML = "Answers";
-    document.getElementById("update-random").innerHTML = "";
+    document.getElementById("rank-update").textContent = rank;
+    document.getElementById("yesterday-or-random").textContent = "Answers";
+    document.getElementById("update-random").textContent = "";
     document.getElementById("no-message").style.display = "inline";
     document.getElementById("pangram").style.display = "none";
     document.getElementById("already-found").style.display = "none";
@@ -579,7 +579,7 @@ function random() {
 
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var gameObj = JSON.parse(this.responseText);
+            let gameObj = JSON.parse(this.responseText);
             letters[0] = gameObj.letters[0];
             letters[1] = gameObj.letters[1];
             letters[2] = gameObj.letters[2];
@@ -606,8 +606,8 @@ function show_random() {
 }
 
 function delete_letter() {
-    var str = document.getElementById("guess").value;
-    var len = str.length;
+    let str = document.getElementById("guess").value;
+    let len = str.length;
 
     str = str.slice(0, len - 1) + str.slice(len, len);
     document.getElementById("guess").value = str;
