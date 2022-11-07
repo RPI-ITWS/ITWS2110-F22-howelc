@@ -34,7 +34,7 @@
     $dbconn = new
         PDO("mysql:host=$host; dbname=$dbname", $user, $pass);
 
-    echo $con ? 'connected' : 'not connected';
+    echo $dbconn ? 'connected' : 'not connected';
 
     ?>
 
