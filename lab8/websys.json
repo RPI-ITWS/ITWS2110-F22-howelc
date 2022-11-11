@@ -1,0 +1,112 @@
+{
+    "Websys_Course": {
+        "Lectures": {
+            "Lecture1": {
+                "Title": "Web Systems Development",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1zU4ma9iwTCe5CM0Jg6YxhW6KWSMYqalPfMVujDB3lq4/edit?usp=sharing"
+            },
+            "Lecture2": {
+                "Title": "The Basics",
+                "Description": "",
+                "Slides": "https://lms.rpi.edu/ultra/courses/_13823_1/cl/outline"
+            },
+            "Lecture3": {
+                "Title": "GitHub & Project Proposals",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1hMU5IB7rQf5mOsoS-OINukgrNlgYGEfdw8gQqgtpRko/edit?usp=sharing"
+            },
+            "Lecture4": {
+                "Title": "HTML",
+                "Description": "",
+                "Slides": "https://drive.google.com/file/d/1I2jPCnw93JDKbrLQLga7Af3tlOkCv9Vo/view?usp=sharing"
+            },
+            "Lecture5": {
+                "Title": "CSS",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1VwSRoioMBEZ-vrKPDNCAx2POj0ZVI51h/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                "Slides2":"https://docs.google.com/presentation/d/1ohof4uAMEwK2tXKfGTYX8juOI-6UbDYI6TKq8V9JlA4/edit?usp=sharing"
+            },
+            "Lecture6": {
+                "Title": "JavaScript",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1gPVTm6JyhDi2vVvoH6iQkztpKkL-0DZ6SJCELcBW4nE/edit?usp=sharing"
+            },
+            "Lecture7": {
+                "Title": "AJAX, JSON, & APIs",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1RDapivq556dK3sLUCyI-Jt1IjUvDZ9lAbl3QlpW95a0/edit?usp=sharing",
+                "Slides2":"https://docs.google.com/presentation/d/1h764nphMNO7SBYkMWIqbCXGC5HK5FEws0FxlKWr-0ww/edit?usp=sharing"
+            },
+            "Lecture8": {
+                "Title": "Quiz 1 Review",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1xT2DeGn0DKwCosDVpdr2D_3O3xqsJjouM0eBdS_A5Cg/edit?usp=sharing"
+            },
+            "Lecture9": {
+                "Title": "Front End Optimization and UX",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1IcPVUmppYvAOPIa-9K-ntT-zdytOiZhNfOD-rtdWxLw/edit?usp=sharing"
+            },
+            "Lecture10": {
+                "Title": "PHP",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1VhQfWOp7sKCPc2i1mHq15pKo_TDiJiA6/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                "Slides2":"https://docs.google.com/presentation/d/178sQI-x5y_hYnfEZsOtqUXl_VcAtGq2BIA_CFDsZ8cQ/edit?usp=sharing"
+            },
+            "Lecture11": {
+                "Title": "PHP and MySQL",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1GQyT3oYY6tfmoO6_sdrsntjKlhPsNMPq/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+                "Slides2":"https://docs.google.com/presentation/d/1RGUzEmW8ZAWuFvw_c9VzKRk8PfMo4I5n/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+            },
+            "Lecture12": {
+                "Title": "Authentication & Authorization",
+                "Description": "",
+                "Slides": "https://docs.google.com/presentation/d/1T1080NC5GNp3-XEm8CqHmoJOCQgvSguU/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+            }
+        },
+        "Labs": {
+            "Lab1": {
+                "Title": "Lab 1",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1jSQyJ_csvXLUZQnzmoCB2KqOAYsQT4zn5N3CMM4EBpE/edit?usp=sharing"
+            },
+            "Lab2": {
+                "Title": "Lab 2",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1-CR_22enAmjiLD56z367NkBBhioFOBaOQmHNYn2TU94/edit?usp=sharing"
+            },
+            "Lab3": {
+                "Title": "Lab 3",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1bauKr2Edv7pnJfRnw-LMwVCg12ORuYfCsI6kBZbvFu8/edit?usp=sharing"
+            },
+            "Lab4": {
+                "Title": "Lab 4",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1u8ZK1on4RgVPh_Rl4iaABu8GIKsXpHgAA3kk_2zQNlM/edit?usp=sharing"
+            },
+            "Lab5": {
+                "Title": "Lab 5",
+                "Description": "",
+                "Instructions": "https://google-gruyere.appspot.com/"
+            },
+            "Lab6": {
+                "Title": "Lab 6",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/102LwWml5H9pmYWQrFkBzBAuvs9SknfG6Y0bGjy93hEQ/edit?usp=sharing"
+            },
+            "Lab7": {
+                "Title": "Lab 7",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1pgM4idrA2MPvyaR-Vu3TXCPaMYkFdtxyLU16vT7CBjc/edit?usp=sharing"
+            },
+            "Lab8": {
+                "Title": "Lab 8",
+                "Description": "",
+                "Instructions": "https://docs.google.com/document/d/1M8TR5ezuCYOCKlixIi_f0cAyBCPylFMa0AORVdP-0BQ/edit?usp=sharing"
+            }
+        }
+    }
+}
