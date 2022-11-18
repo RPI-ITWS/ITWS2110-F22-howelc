@@ -1,5 +1,5 @@
-
-
+I mostly completed the solution I could not get it to work as the event listener would get destroyed with the += innerhtml operator.
+I would have liked to change it to append but I did not have enough time. As for creatiity I used what I did on lab8.
 
 
 

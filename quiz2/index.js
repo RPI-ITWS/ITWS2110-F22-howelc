@@ -19,6 +19,22 @@ let lecList = document.getElementById("lec-dropdown");
 
 let labList = document.getElementById("lab-dropdown");
 
+
+function removeTabs() {
+    let lecTabs = document.getElementsByClassName("lecuture-tab");
+    let labTabs = document.getElementsByClassName("lab-tab");
+    console.log(lecTabs);
+    console.log(labTabs);
+    for (let i = 0; i < lecTabs.length; i++) {
+        lecTabs[i].remove();
+    }
+
+    for (let j = 0; j < labTabs.length; j++) {
+        labTabs[i].remove();
+    }
+
+};
+
 document.getElementById("course-websys").addEventListener("click", function () {
     console.log("Websys");
     removeTabs();
@@ -87,7 +103,6 @@ document.getElementById("course-MBE").addEventListener("click", function () {
     lecList.innerHTML = "";
     // display lecture items
     for (let i = 0; i < mbeLectures.length; i++) {
-
         let lecNum = i + 1;
 
         let listHTML = '';
@@ -105,27 +120,13 @@ document.getElementById("course-MBE").addEventListener("click", function () {
         tabHTML += '<h2 class="title-text">' + mbeLectures[i].Title + '</h2>';
         tabHTML += '<p class= "body-text">' + mbeLectures[i].Description + '</p>';
         tabHTML += '<button id="lecture' + i + '" class="btn btn-success px-4 mb-4 post-btn">Archive Content </button>';
-        tabHTML += '<iframe src="' + mbeLectures.link + '"></iframe>';
+        tabHTML += '<iframe src="' + mbeLectures[i].Slides + '"></iframe>';
         tabHTML += "</div>";
 
         tabDisplay.innerHTML += tabHTML;
     }
 });
 
-function removeTabs() {
-    let lecTabs = document.getElementsByClassName("lecuture-tab");
-    let labTabs = document.getElementsByClassName("lab-tab");
-    console.log(lecTabs);
-    console.log(labTabs);
-    for (let i = 0; i < lecTabs.length; i++) {
-        lecTabs[i].remove();
-    }
-
-    for (let j = 0; j < labTabs.length; j++) {
-        labTabs[i].remove();
-    }
-
-};
 document.getElementById("lec-display").addEventListener("click", function () {
     if (lecList.className == "hide") {
         lecList.className = "show";
