@@ -1,0 +1,223 @@
+/*Root element with variables to use throughout enter website*/
+:root {
+    /*colors*/
+    --WB-Primary: #272643;
+    --WB-Secondary: #BAE8E8;
+    --WB-Tertiary: #2C698D;
+    /*typography*/
+    --fs-caption: 0.75rem;
+    --fs-body: 1rem;
+    --fs-body-large: 1.25rem;
+    --fs-head: 1.5rem;
+    --fs-head-large: 2rem;
+    --fs-head-xl: 4rem;
+    /*fonts*/
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --title-font: Verdana, sans-serif;
+}
+
+/*basic body styling*/
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip-ink: auto;
+    image-rendering: auto;
+    -webkit-line-break: normal;
+    -moz-line-break: normal;
+    -ms-line-break: normal;
+    line-break: normal;
+    orphans: 3;
+    widows: 3;
+    hanging-punctuation: first allow-end last;
+}
+
+
+
+#side-nav {
+    background-color: var(--WB-Primary);
+    color: white;
+    height: 100%;
+}
+
+.brand {
+    font-family: var(--title-font);
+    font-size: var(--fs-head-large);
+    color: white;
+}
+
+.page-title {
+    font-family: var(--title-font);
+    font-size: var(--fs-head-large);
+    color: var(--WB-Primary);
+}
+
+.welcome-msg {
+    font-family: var(--title-font);
+    font-size: var(--fs-head-large);
+    animation: 3s fadeIn;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0.0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.sign-in {
+    background-color: var(--WB-Tertiary);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--body-font);
+    font-size: var(--fs-body);
+}
+
+.bottom-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+}
+
+.coming-soon {
+    background-image: url(resources/CollegeLuncheonPattern.jpeg);
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+}
+
+.body-text {
+    font-family: var(--body-font);
+    font-size: var(--fs-body);
+}
+
+.title-text {
+    font-family: var(--body-font);
+    font-size: var(--fs-head-large);
+}
+
+.sort-link,
+.sort-link:link,
+.sort-link:active,
+.sort-link:hover,
+.sort-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.wb-nav-item{
+    list-style-type: none;
+}
+
+iframe{
+    width: 100%;
+    height: 80vh;
+}
+
+.bg-cs {
+    background-color: white;
+    border: 10px solid var(--WB-Primary);
+    border-radius: 10px;
+}
+
+/* Edited Boostrap */
+button.nav-link {
+    color: white;
+    font: var(--fs-body-large);
+    font-family: var(--body-font);
+    width: 100%;
+    text-align: start;
+}
+
+button.nav-link:hover,
+button.nav-link:active,
+button.nav-link:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--WB-Tertiary);
+}
+
+
+div.offcanvas {
+    background-color: var(--WB-Primary);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--WB-Tertiary) !important;
+}
+
+
+
+/*media queries for changing screen sizes*/
+@media only screen and (min-width: 280px) {
+    :root {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    :root {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 95%;
+    }
+
+    #body-format {
+        display: grid;
+        grid-template-columns: auto 85%;
+        height: 100vh;
+    }
+
+    hr {
+        border: 1px solid var(--WB-Secondary);
+        width: 95%;
+    }
+
+    .navbar-expand-md .offcanvas {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 105%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    :root {
+        font-size: 115%;
+    }
+}
