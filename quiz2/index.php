@@ -68,6 +68,7 @@
                                     data-bs-target="#home-tab" type="button" aria-controls="home-tab"
                                     aria-selected="true" role="tab"><i class="bi bi-house"></i> Home</button>
                             </li>
+
                             <li class="nav-item">
                                 <button class="nav-link" id="lec-display"><i class="bi bi-easel2"></i>
                                     Lectures</button>
@@ -127,7 +128,17 @@
                             }
                             ?>
                         </div>
-                    </div>
+                        <div class="course-display align-self-center text-center my-5">
+                        <h2 class="text-center py-3 title-text d-flex flex-column">Courses</h2>
+                        <button id="course-websys" class="course-select p-2 m-2">
+                            ITWS 2110 - Web Systems Development
+                        </button>
+                            
+                        <button id="course-MBE" class="course-select p-2 m-2">
+                            ITWS 4967 - Modern Binary Exploitation
+                        </button>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </main>
