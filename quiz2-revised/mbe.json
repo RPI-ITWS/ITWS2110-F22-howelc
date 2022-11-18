@@ -1,0 +1,68 @@
+{
+    "Lectures": [
+        {
+            "Title": "Modern Binary Exploitation",
+            "Description": "Introduction to the MBE course and a review of the syllabus material.",
+            "Slides": "https://drive.google.com/file/d/1XPqoocF5CX0g2PPVjINbblczLPBoVMQJCTbnVTOrbR4/preview"
+        
+        },
+        {
+            "Title": "MBE - RE",
+            "Description": "Reverse Engineering binary code.",
+            "Slides": "https://drive.google.com/file/d/1njsyW0uWA4TKp1B-8vtEOFuNxsBuhxmY4EEt_x5pi7o/preview"
+                
+            
+        },
+        {
+            "Title": "Memory Corruption",
+            "Description": "An overview of memory corruption.",
+            "Slides": "https://drive.google.com/file/d/1avKXYm4CoxWyK93gxyJVcawbox8JUyIGs0wNNwHuhYg/preview"
+                
+            
+        },
+        {
+            "Title": "Shellcoding",
+            "Description": "An overview of shellcoding and an inro to cookies.",
+            "Slides": "https://drive.google.com/file/d/1CbZQjUoGFJeID5Tc5j2Ez0IkhFf3Lanhw3WTiiNdGWI/preview"
+                
+            
+        },
+        {
+            "Title": "Stack Sookies",
+            "Description": "An overview of Stack Cookies.",
+            "Slides": "https://drive.google.com/file/d/1vaRbpP0jNr245BMAqjR_0IkAiSZVAM9LteR2Tu4mNLk/preview"
+            
+        },
+        {
+            "Title": "DEP and ROP",
+            "Description": "An overview of Data Execution Prevention and Return Oriented Programming.",
+            "Slides":"https://drive.google.com/file/d/1mFhnVrPVt8TiFcEFqCIXUGePWQis5k8ossX-A0uuz6E/preview"
+            
+        },
+        {
+            "Title": "ASLR",
+            "Description": "An overview of the memory protection system Address space layout randomization.",
+            "Slides": "https://drive.google.com/file/d/1GkPEr_IYfMW4ISOLeVF0IGGyM5G8NQKqlwaCLKSAPGU/preview"
+            
+        },
+        {
+            "Title": "Advance defenses",
+            "Description": "The blue team side of our explout toolbox.",
+            "Slides":"https://drive.google.com/file/d/1NNuxVy220xdbuaa7e7njF-GC4sRB5Z8QM6ZMKyzXZcg/preview"
+            
+        },
+        {
+            "Title": "The Heap",
+            "Description": "A overview of heap exploitation.",
+            "Slides": "https://drive.google.com/file/d/1m_Oc1GuOp20cttQ3l2r-jNTgU9xh9rzjZJLOS19ziHc/preview"
+            
+        },
+        {
+            "Title": "Misc. types of bugs",
+            "Description": "More types of bugs and some cool bug classes.",
+            "Slides": "https://drive.google.com/file/d/1EXdzSb38NDFuq1YP3EPs2IThOu1LaPkAl_0sbEyB3S8/preview"
+            
+        }
+        
+    ]
+}
