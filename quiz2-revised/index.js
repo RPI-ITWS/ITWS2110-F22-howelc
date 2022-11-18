@@ -21,15 +21,15 @@ let labList = document.getElementById("lab-dropdown");
 
 
 function removeTabs() {
-    let lecTabs = document.getElementsByClassName("lecuture-tab");
+    let lecTabs = document.getElementsByClassName("lecture-tab");
     let labTabs = document.getElementsByClassName("lab-tab");
     console.log(lecTabs);
     console.log(labTabs);
-    for (let i = 0; i < lecTabs.length; i++) {
+    for (let i = lecTabs.length-1; i > -1 ; i--) {
         lecTabs[i].remove();
     }
 
-    for (let j = 0; j < labTabs.length; j++) {
+    for (let j = labTabs.length-1; j > -1 ; j--) {
         labTabs[j].remove();
     }
 
